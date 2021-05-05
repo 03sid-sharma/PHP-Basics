@@ -20,6 +20,13 @@
 
         // $names=array("Daniel","Michael","Jason");
         // echo $names['1'];
+
+        $x = 5;
+        function smh(){
+            $y = 10;
+            echo $GLOBALS['x'];
+        }
+        smh();
     ?>
 </body>
 </html>
