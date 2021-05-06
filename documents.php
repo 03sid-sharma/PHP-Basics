@@ -1,5 +1,7 @@
 <?php
     include 'header.php';
+    
+    echo $_SESSION['username'];
 ?>
 
     <section>

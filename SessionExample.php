@@ -1,7 +1,3 @@
-<?php
-    echo $_POST['name'];
-    echo $_SESSION['username'];
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="POST">
-        <input type="hidden" name="name" value="siddharth">
-        <button type="submit">Click Me!</button>
-    </form>
+    <ul>
+        <li><a href="documents.php">HOME</a></li>
+        <li><a href="Form.php">LogIn</a></li>
+    </ul>
+
+<?php
+    $_SESSION['username'] = "Sid101";
+    echo $_SESSION['username'];
+?>
 </body>
 </html>
