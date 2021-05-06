@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +18,11 @@
 <?php
     $_SESSION['username'] = "Sid101";
     echo $_SESSION['username'];
+
+    if(!isset($_SESSION['username']))
+        echo "You're not logged in!";
+    else
+        echo "You're logged in!";
 ?>
 </body>
 </html>
